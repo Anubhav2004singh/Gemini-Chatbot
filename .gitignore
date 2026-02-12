@@ -17,4 +17,4 @@ venv/
 .idea/
 
 
-config.json
+src/config.json

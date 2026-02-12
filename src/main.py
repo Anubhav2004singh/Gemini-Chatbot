@@ -9,9 +9,7 @@ import google.generativeai as genai
 
 
 
-working_dir=os.path.dirname(os.path.abspath(__file__))
-config_data=json.load(open(f"{working_dir}/config.json"))
-GEMINI_API_KEY=config_data["GEMINI_API_KEY"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=GEMINI_API_KEY)
 
 model = genai.GenerativeModel("models/gemini-2.5-flash")
@@ -39,7 +37,7 @@ for message in st.session_state.chat_history:
 
 
 
-user_prompt=st.chat_input("Message Karle Bsdk")
+user_prompt=st.chat_input("Message Kar Lijiye Ankush Singh Chauhan")
 
 if user_prompt:
     st.chat_message("user").markdown(user_prompt)

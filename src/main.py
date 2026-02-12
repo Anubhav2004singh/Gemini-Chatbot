@@ -28,7 +28,7 @@ if "chat_history" not in st.session_state:
 
 
 
-st.title("☠️ BHAI SE BAAT KARLO")
+st.title("☠️ Anubhav Singh Chauhan SE BAAT KARLO")
 
 
 for message in st.session_state.chat_history:
